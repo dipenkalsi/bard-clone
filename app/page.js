@@ -1,5 +1,6 @@
 'use client'
 import { UserAuth } from './context/AuthContext'
+import Navbar from './components/Navbar';
 import SignIn from './components/SignIn';
 export default function Home() {
   const {user} = UserAuth();
@@ -9,7 +10,7 @@ export default function Home() {
     <SignIn/>
     :
     <main>
-      Successfully logged in..
+      <Navbar/>
     </main>}
     </div>
   )
